@@ -22,18 +22,22 @@ export default function App() {
         <Text>Discount Calculaor</Text>
       </View>
       <View style = {styles.innerContainer}>
+      <Text>
         <Text>Enter Price: </Text>
         <TextInput style = {styles.input}
           keyboardType = 'numeric'
           placeholder = "Price goes here.."
           onChangeText={price => setPrice(price)}
         />
+      </Text>
+      <Text>
         <Text>Enter Discount: </Text>
         <TextInput style = {styles.input}
           keyboardType = 'numeric'
           placeholder = "Discount goes here.."
           onChangeText={disc => setDisc(disc)}
         />
+      </Text>
       </View>  
       <View>
         <Button title = "Calculate Details" 
